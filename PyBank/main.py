@@ -37,7 +37,9 @@ def da_greatest():
     
     answer = input("Import as TXT? y/n?: ")
     if answer == "y":
-        report = open('Report.txt', 'w')
+        save_path = os.path.join('..', 'PyBank', 'analysis')
+        reporto = os.path.join(save_path, "Analysis.txt")
+        report = open(reporto, 'w')
         report.write("MONEY REPORT")
         report.write("\n")
         report.write("_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_")
